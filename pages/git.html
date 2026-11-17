@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student IT Knowledge Base</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <h1>Student IT Knowledge Base</h1>
+  </header>
+  <nav>
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li><a href="pages/bash.html">Bash</a></li>
+            <li><a href="pages/git.html">Git</a></li>
+            <li><a href="pages/dotnet-cli.html">Dotnet CLI</a></li>
+        </ul>
+    </nav>
+  <main>
+  <header>
+    <h1>Polecenia git</h1>
+  </header>
+  <article>
+    <p>Poniższe polecenia są niezbędne przy pracy z użyciem gita.</p>
+    <table class="command-table">
+        <thead>
+            <th>polecenie</th>
+            <th>przyklad</th>
+            <th>opis</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>git clone</th>
+                <td>git clone URL</td>
+                <td>Pobiera repozytorium i tworzy lokalny katalog</td>
+            </tr>
+            <tr>
+                <th>git status</th>
+                <td>git status</td>
+                <td>Sprawdza gałęzie oraz pliki przygotowane i zmienione</td>
+            </tr>
+            <tr>
+                <th>git add</th>
+                <td>git add docs/warp/git.md</td>
+                <td>Dodaje wyznaczony przez nas plik do obszaru staging</td>
+            </tr>
+            <tr>
+                <th>git commit</th>
+                <td>git commit -m "docs: add Git cheatsheet"</td>
+                <td>Zapisuje przygotowanie zmiany z czytelnym komunikatem</td>
+            </tr>
+            <tr>
+                <th>git push</th>
+                <td>git push -u origin feature/git-cheatsheet</td>
+                <td>Publikuje nową gałęź i ustawienie śledzenia</td>
+            </tr>
+            <tr>
+                <th>git pull</th>
+                <td>git pull -u origin feature/git-cheatsheet</td>
+                <td>Pobiera zmian bez tworzenia nieoczekiwanego merge commita</td>
+            </tr>
+            <tr>
+                <th>git fetch</th>
+                <td>git fetch origin</td>
+                <td>Pobiera informacje o zmianach bez modyfikowania pliki roboczych</td>
+            </tr>
+            <tr>
+                <th>git branch</th>
+                <td>git branch</td>
+                <td>Wyświetla lokalne gałęzie i oznacza aktywną</td>
+            </tr>
+            <tr>
+                <th>git switch</th>
+                <td>git switch -c feature/nazwa</td>
+                <td>Tworzy gałąź roboczą i przełącza nas na nią</td>
+            </tr>
+            <tr>
+                <th>git log</th>
+                <td>git log --oneline -5</td>
+                <td>Pokazuje skrócony podgląd 5 ostatnich commitów</td>
+            </tr>
+        </tbody>
+    </table>
+  </article>
+  <article>
+    <h1>Procedura pracy z gitem</h1>
+    <ol>
+        <li>synchronizacja</li>
+        <li>branch</li>
+        <li>zmiana</li>
+        <li>commit</li>
+        <li>push</li>
+        <li>PR</li>
+    </ol>
+  </article>
+  <article>
+    <h1>Linki do dokumentacji</h1>
+    <a href="../docs/warp/git.md">Tabela z komendami git</a>
+    <a href="https://git-scm.com/docs">Oficjalna dokumentacja git</a>
+  </article>
+  </main>
+  <footer>
+    <p>Poniższy projekt jest projektem edukacyjnym.</p>
+  </footer>
+</body>
+</html>

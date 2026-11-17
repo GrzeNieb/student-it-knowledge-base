@@ -63,3 +63,34 @@ a:focus-visible {
 }
 
 .command-table th { color: var(--accent); }
+
+nav
+{
+  text-align: center;
+  width: 100%;
+  min-height: 2.4em;
+  background-color: var(--surface);
+}
+
+nav > ul
+{
+  list-style-type: none;
+}
+
+nav > ul > li
+{
+  width: 25%;
+  float: left;
+  padding: 5px 10px;
+}
+
+nav > ul > li > a
+{
+  text-decoration: none;
+}
+
+header > h1
+{
+  text-align: center;
+  color: var(--accent);
+}
